@@ -8,11 +8,13 @@ import LocationOnIcon from 'material-ui-icons/LocationOn';
 const styles:StyleRules ={
 	root: {
 		width: "100%",
+		position: "fixed",
+		bottom: 0
 	},
 };
 
 
-class BottomMainNavigation extends React.Component<WithStyles> {
+class BottomMainNavigation extends React.Component<WithStyles<"root">> {
 
 	state = {
 			value: 0,
